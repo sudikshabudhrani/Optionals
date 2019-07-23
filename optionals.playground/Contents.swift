@@ -13,4 +13,9 @@ let thirdHarryPotter = Book(name: "Harry Potter and the Prisoner of Azkaban", pu
 let books = [firstHarryPotter, secondHarryPotter,
              thirdHarryPotter]
 
-let unaccouncedBook = Book(name: "Rabels and Lions", publicationYear: 0)
+let unaccouncedBook = Book(name: "Rabels and Lions", publicationYear: nil)
+
+if firstHarryPotter.publicationYear != nil {
+    let actualYear = firstHarryPotter.publicationYear
+    print(actualYear!)
+}
